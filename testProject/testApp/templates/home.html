@@ -5,6 +5,9 @@
     </head>
     <body>
         <h1>My Pet Adoption Agency</h1>
+        {% extends "base.html" %}
+        {% block content %}
+        <h1>Pets up for adoption</h1>
         <ul>
             {% for pet in pets %}
             <li>
@@ -13,6 +16,7 @@
             </a>
             </li>
             {% endfor %}
-        </ul>            
+        </ul>
+        {% endblock %}            
     </body>
 </html>
